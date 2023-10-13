@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/2179480f96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="musicplayer">
+<nav>
+	<div class="circle">
+		<i class="fa-solid fa-angle-left"></i>
+	</div>
+	<div class="circle">
+		<i class="fa-solid fa-bars"></i>
+	</div>
+</nav>
+<img src="headphones-pink-tender-animated-wallpaper.jpg" class="song-img">
+<h1>Song</h1>
+<p>Luis Wonsi Ft. Puerto Rican</p>
+<audio id="song">
+	<source src="file_example_MP3_1MG.mp3">
+</audio>
+<input type="range" value="0" id="progress">
+<div class="controls">
+	<div><i class="fa-solid fa-backward"></i></div>
+	<div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+	<div><i class="fa-solid fa-forward"></i></div>
+</div>
+		</div>
+	</div>
+    <script src="javascript.js">
+	</script>
+</body>
+</html>
+
